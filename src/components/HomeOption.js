@@ -2,16 +2,21 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-const HomeOption = ({ content }) => {
+const HomeOption = ({ content, language }) => {
 
-    const { title, description, link  } = content
+    const { title, description, link, image } = content
 
     return (
-        <div className="card p-3 m-3 shadow-lg text-center rounded-lg max-w-md">
-            <p className="text-3xl leading-tight">{ title }</p>
-            <p className="text-base leading-tight text-gray-600">{ description }</p>
+        <div className="card p-3 m-3 col-xl-3 shadow-lg text-center rounded-lg item__option">
+            <h3 className="">{ title }</h3>
 
-            <Link to={ link } className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 mt-4 border-blue-700 hover:border-blue-500 rounded text-decoration-none">Empezar</Link>
+            <center>
+                <img src={image} className="mt-3" height="92" width="92" alt={`Image of ${title}`} />
+            </center>
+
+            <p className="mt-4">{ description }</p>
+
+            <Link to={ link } className="btn btn-primary mb-0">{language === 'en' ? 'Start' : 'Comenzar' }</Link>
         </div>
     )
 }

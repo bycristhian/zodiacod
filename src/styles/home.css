@@ -4,3 +4,17 @@
     background-image: url('../images/background.jpg');
 }
 
+h1 {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 4rem;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header__languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
