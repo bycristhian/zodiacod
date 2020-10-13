@@ -1,0 +1,51 @@
+
+.container__compatibility {
+    background-image: url('../img/background_comp.jpg');
+}
+
+.item__sign {
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+    background: /*#5C5C93*/#0D1D37;
+    height: 180px;
+    display: inline-block;
+    border-radius: 14px;
+    border: 4px #343439 solid;
+    margin-top: 30px;
+    color: #C2C2C2;
+}
+
+.item__sign:hover {
+    cursor: pointer;
+    font-size: 35px;
+    color: white;
+    border: 4px #E7E5EC solid;
+}
+
+.item__sign:focus {
+    border: 4px #343439 solid;
+    color: white;
+}
+
+.item__sign img {
+    margin: 40px auto 0;
+    display: block;
+}
+
+.item__sign h3 {
+    font-family: 'Laila', serif;
+    font-size:  30px; 
+    text-align: center;
+    margin-top: 5px;
+}
+
+.container__title {
+    width: auto;
+    background-color: #222222af;
+    border-radius: 10px;
+}
+
+.container__title h1 {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 3rem;
+    width: auto;
+}

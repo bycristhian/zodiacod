@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-const Sign = () => {
+const MySign = () => {
     return (
         <h2>My Sign</h2>
     )
 }
 
-export default Sign
+export default MySign
