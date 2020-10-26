@@ -22,7 +22,7 @@
 }
 
 .item__sign:focus {
-    border: 4px #343439 solid;
+    border: 4px #4e4e53 solid;
     color: white;
 }
 
@@ -48,4 +48,39 @@
     font-family: 'Sansita Swashed', cursive;
     font-size: 3rem;
     width: auto;
+}
+
+.container__modal {
+    position: absolute;
+    z-index: 9;
+}
+
+.placeholder__modal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #0f0f0f8e;
+}
+
+.img__sign__modal {
+    background-color: #EE7560;
+    padding: 20px;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.img__sign__modal img {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+}
+
+.compatibility__description {
+    font-size: 1.2rem;
+    overflow-y: scroll;
+    height: 50%;
 }

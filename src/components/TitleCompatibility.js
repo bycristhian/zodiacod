@@ -4,14 +4,15 @@ import React, { useEffect, useState } from 'react'
 const TitleCompatibility = ({ language, valueSigns }) => {
 
     const [title, setTitle] = useState("")
-    const { ownSignId, partnerId } = valueSigns
+    const { ownSign, partnerSign } = valueSigns
 
     useEffect(() => {
         if (language === 'en'){
-            ownSignId === null ? setTitle("Select your sign") : setTitle("Select the sign of your partner")
+            ownSign === null ? setTitle("Select your sign") : setTitle("Select the sign of your partner")
         } else if (language === 'es'){
-            ownSignId === null ? setTitle("Selecciona tú signo") : setTitle("Selecciona el signo de tú pareja")
+            ownSign === null ? setTitle("Selecciona tú signo") : setTitle("Selecciona el signo de tú pareja")
         }
+                
     }, [language, valueSigns])
 
     return (

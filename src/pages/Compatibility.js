@@ -6,40 +6,56 @@ import LanguageHeader from '../components/LanguageHeader'
 
 import '../styles/compatibility.css'
 import TitleCompatibility from '../components/TitleCompatibility'
+import Modal from '../components/Modal'
 
 
 // This Component manage compatibility page
 const Compatibility = () => {
 
     const [language, setLanguage] = useLanguage()
-    const [valueSigns, setValueSigns] = useState({ ownSignId: null, partnerId: null })
-    const { ownSignId, partnerId } = valueSigns
+    const [valueSigns, setValueSigns] = useState({ ownSign: null, partnerSign: null })
+    const { ownSign, partnerSign } = valueSigns
 
     const handleLanguageChange = ({ target }) => {
         setLanguage(target.value)
     }
 
     const handleClickSign = (id) => {
-        if (!ownSignId){
-            setValueSigns({ ...valueSigns, ownSignId: id })
+        if (!ownSign){
+            setValueSigns({ ...valueSigns, ownSign: signs.find(ele => ele.id === id) })
         } else {
-            setValueSigns({ ...valueSigns, partnerId: id })
+            setValueSigns({ ...valueSigns, partnerSign: signs.find(ele => ele.id === id) })
         }
     }
 
+    const handleCloseModal = () => {
+        setValueSigns({ ...valueSigns, ownSign: null, partnerSign: null})
+    }
+
     return (
-        <div className="position-absolute w-100 container__compatibility">
+        <>
+            {ownSign !== null && partnerSign !== null ? 
+                <Modal ownSign={ownSign} partnerSign={partnerSign} handleCloseModal={handleCloseModal} /> 
+                : null
+            }
+            <div className="position-absolute w-100 container__compatibility">
 
-            <LanguageHeader handleLanguageChange={handleLanguageChange} language={language} />
+                {ownSign !== null && partnerSign !== null ? 
+                    <div className="placeholder__modal"></div> 
+                    : null
+                }
 
-            <TitleCompatibility language={language} valueSigns={valueSigns} />
+                <LanguageHeader handleLanguageChange={handleLanguageChange} language={language} />
 
-            <div className="row justify-content-center align-items-stretch mt-4 h-100">
-                {signs.map((sign, counter) => (
-                    <Sign content={sign} language={language} handleClickSign={handleClickSign} />
-                ))}
+                <TitleCompatibility language={language} valueSigns={valueSigns} />
+
+                <div className="row justify-content-center align-items-stretch mt-4 h-100">
+                    {signs.map((sign) => (
+                        <Sign content={sign} language={language} handleClickSign={handleClickSign} />
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
