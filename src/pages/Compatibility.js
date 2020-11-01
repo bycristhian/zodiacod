@@ -35,7 +35,7 @@ const Compatibility = () => {
     return (
         <>
             {ownSign !== null && partnerSign !== null ? 
-                <Modal ownSign={ownSign} partnerSign={partnerSign} handleCloseModal={handleCloseModal} /> 
+                <Modal ownSign={ownSign} language={language} partnerSign={partnerSign} handleCloseModal={handleCloseModal} /> 
                 : null
             }
             <div className="position-absolute w-100 container__compatibility">

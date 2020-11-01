@@ -2,16 +2,11 @@ import React, { useEffect, useState } from 'react'
 import CompatibilityRepository from '../data/CompatibilityRepository'
 import useLanguage from '../hooks/useLanguage'
 
-const Modal = ({ handleCloseModal, ownSign, partnerSign }) => {
+const Modal = ({ handleCloseModal, ownSign, partnerSign, language }) => {
 
-    const [language] = useLanguage()
     const [compatibility, setCompatibility] = useState({ pattern: "", en: { description: "" }, es: { description: "" } })
 
     useEffect(() => {
-
-        console.log(ownSign)
-        console.log(partnerSign)
-
         let compatibilities = CompatibilityRepository.getCompatibilities()
         searchCompatibility(compatibilities)
     }, [])
@@ -41,9 +36,9 @@ const Modal = ({ handleCloseModal, ownSign, partnerSign }) => {
                         </div>
                     </div>
 
-                    <p className="compatibility__description mt-4 mb-4">{ language === 'en' ? compatibility.en.description : compatibility.es.description }</p>
+                    <p className="compatibility__description mt-4 mb-4 p-3" dangerouslySetInnerHTML={{ __html: language === 'en' ? compatibility.en.description : compatibility.es.description }}></p>
 
-                    <button className="btn btn-block btn-info mt-4" onClick={handleCloseModal}>Close</button>
+                    <button className="btn btn-block btn-info mt-4" onClick={handleCloseModal}>{ language === 'es' ? "Cerrar" : "Close" }</button>
                 </div>
             </div>
         </div>
