@@ -7,6 +7,7 @@ import LanguageHeader from '../components/LanguageHeader'
 import '../styles/compatibility.css'
 import TitleCompatibility from '../components/TitleCompatibility'
 import Modal from '../components/Modal'
+import { BackHome } from '../components/BackHome'
 
 
 // This Component manage compatibility page
@@ -45,6 +46,7 @@ const Compatibility = () => {
                     : null
                 }
 
+                <BackHome />
                 <LanguageHeader handleLanguageChange={handleLanguageChange} language={language} />
 
                 <TitleCompatibility language={language} valueSigns={valueSigns} />
