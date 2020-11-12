@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/zodiacod/static/css/main.98d6f055.chunk.css",
+    "main.js": "/zodiacod/static/js/main.c30e49d1.chunk.js",
+    "main.js.map": "/zodiacod/static/js/main.c30e49d1.chunk.js.map",
+    "runtime-main.js": "/zodiacod/static/js/runtime-main.1ace7d6b.js",
+    "runtime-main.js.map": "/zodiacod/static/js/runtime-main.1ace7d6b.js.map",
+    "static/js/2.f1e5f4b3.chunk.js": "/zodiacod/static/js/2.f1e5f4b3.chunk.js",
+    "static/js/2.f1e5f4b3.chunk.js.map": "/zodiacod/static/js/2.f1e5f4b3.chunk.js.map",
+    "index.html": "/zodiacod/index.html",
+    "precache-manifest.f25f1383007b0ab03be76ad470e6355d.js": "/zodiacod/precache-manifest.f25f1383007b0ab03be76ad470e6355d.js",
+    "service-worker.js": "/zodiacod/service-worker.js",
+    "static/css/main.98d6f055.chunk.css.map": "/zodiacod/static/css/main.98d6f055.chunk.css.map",
+    "static/js/2.f1e5f4b3.chunk.js.LICENSE.txt": "/zodiacod/static/js/2.f1e5f4b3.chunk.js.LICENSE.txt",
+    "static/media/mysign.css": "/zodiacod/static/media/background.23597659.jpg",
+    "static/media/compatibility.css": "/zodiacod/static/media/background_comp.ada5198c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1ace7d6b.js",
+    "static/js/2.f1e5f4b3.chunk.js",
+    "static/css/main.98d6f055.chunk.css",
+    "static/js/main.c30e49d1.chunk.js"
+  ]
+}
