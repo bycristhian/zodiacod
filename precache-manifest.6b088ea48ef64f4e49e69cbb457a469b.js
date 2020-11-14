@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8a048f65ef907fbb5de56f50ba7f4ad1",
+    "revision": "a7f8dce380a7b17bf420b17f72f9be4e",
     "url": "/zodiacod/index.html"
   },
   {
-    "revision": "c1e9471ddfa15d5e5b0c",
+    "revision": "472a910a5870780527e1",
     "url": "/zodiacod/static/css/main.98d6f055.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zodiacod/static/js/2.f1e5f4b3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c1e9471ddfa15d5e5b0c",
-    "url": "/zodiacod/static/js/main.c30e49d1.chunk.js"
+    "revision": "472a910a5870780527e1",
+    "url": "/zodiacod/static/js/main.aa3f4471.chunk.js"
   },
   {
     "revision": "1d20dd6fd8b386efe97e",
