@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/zodiacod/precache-manifest.6b088ea48ef64f4e49e69cbb457a469b.js"
+  "/zodiacod/precache-manifest.3ec715a987d4434d7a0279f0dc319325.js"
 );
 
 self.addEventListener('message', (event) => {
