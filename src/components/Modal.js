@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import CompatibilityRepository from '../data/CompatibilityRepository'
-import useLanguage from '../hooks/useLanguage'
 
 const Modal = ({ handleCloseModal, ownSign, partnerSign, language }) => {
 

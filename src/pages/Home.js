@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HomeOption from '../components/HomeOption'
 import LanguageHeader from '../components/LanguageHeader'
 import useLanguage from '../hooks/useLanguage'
 
+import soundfile from '../audio/cosmos.mp3'
 import '../styles/home.css'
+import ReactAudioPlayer from 'react-audio-player'
 
 
 const options = [

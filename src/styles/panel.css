@@ -1,0 +1,14 @@
+
+.panel__audio {
+    background: #6e6e6e4b;
+    padding: 5px;
+    border-radius: 0px 0px 8px 0px;
+    font-weight: bold;
+}
+
+.panel__audio button {
+    z-index: 9;
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+}
